@@ -3,7 +3,7 @@ const colorette = require("colorette");
 
 const { red, green, italic } = colorette;
 
-function add(task) {
+function add(task, { hide }) {
 
   let todoList = conf.get('todoList', []);
 
@@ -14,7 +14,8 @@ function add(task) {
 
   todoList.push({
     text: task,
-    done: false
+    done: false,
+    hidden: hide,
   });
 
   conf.set('todoList', todoList);

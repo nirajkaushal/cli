@@ -17,11 +17,13 @@ program
 program
   .command('list')
   .description('List all the TODO tasks')
+  .option('-sh, --show-hidden', 'Show hidden tasks')
   .action(list);
 
 program
   .command('add <task>')
   .description('Add a new TODO task')
+  .option('-h, --hide', 'Add task as hidden')
   .action(add);
 
 program
