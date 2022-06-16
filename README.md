@@ -8,7 +8,9 @@ A CLI tool to manage todos, notes, and more.
 ## Usage
 
 ```
-Usage: index [options] [command]
+1. todos: Manage todos
+
+Usage: todos [options] [command]
 
 Options:
   -h, --help              display help for command
